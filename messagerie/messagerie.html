@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Messagerie</h1>
+    </header>
+    <div class="messaging-container">
+        <div class="contacts">
+            <h2>Contacts</h2>
+            <ul id="convo-container"></ul> 
+        </div>
+        <div class="chat-window" id="chat-container" class="chat-hidden"> 
+            <h2 id="active-convo-name">Sélectionnez une conversation</h2>
+            <div class="messages" id="messages-container"></div> 
+            <input type="text" id="new-message" placeholder="Écrivez un message...">
+            <button id="send-button">Envoyer</button>
+        </div>
+    </div>
+    <script src="messagerie.js"></script>
+</body>
+</html>

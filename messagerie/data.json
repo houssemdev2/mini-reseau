@@ -1,0 +1,41 @@
+{
+  "posts": [
+    { "id": 1, "content": "Premier post", "image": null },
+    { "id": 2, "content": "Deuxième post", "image": "image1.jpg" }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "name": "Ami 1",
+      "lastMessage": "Salut!",
+      "messages": [
+        {
+          "timestamp": "2024-10-19T10:00:00",
+          "sender": "Ami 1",
+          "content": "Salut!"
+        },
+        {
+          "timestamp": "2024-10-19T10:01:00",
+          "sender": "Moi",
+          "content": "Bonjour!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ami 2",
+      "lastMessage": "À bientôt!",
+      "messages": [
+        {
+          "timestamp": "2024-10-19T11:00:00",
+          "sender": "Ami 2",
+          "content": "À bientôt!"
+        }
+      ]
+    }
+  ],
+  "friends": [
+    { "id": 1, "name": "Ami 1", "surname": "Dupont" },
+    { "id": 2, "name": "Ami 2", "surname": "Durand" }
+  ]
+}

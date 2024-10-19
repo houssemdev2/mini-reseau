@@ -1,0 +1,55 @@
+/* messagerie.css */
+
+.messaging-container {
+    display: flex;
+    margin: 20px;
+}
+
+.contacts {
+    width: 200px;
+    border-right: 1px solid var(--border-color);
+}
+
+.contact {
+    padding: var(--input-padding);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact:hover {
+    background-color: var(--contact-bg-hover);
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.messages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.messages p {
+    margin: 5px 0;
+}
+
+#message-input {
+    width: calc(100% - 110px);
+    padding: var(--input-padding);
+}
+
+button {
+    padding: var(--input-padding) !important;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}

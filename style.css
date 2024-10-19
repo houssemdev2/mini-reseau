@@ -11,6 +11,10 @@
     --subheader-font-size: 1.5rem;  /*Variable pour la taille du sous-titre */
     --padding: 20px;
     --margin: 20px;
+    --primary-hover-color: darkblue;
+    --border-color: #ccc;
+    --contact-bg-hover: #e9ecef;
+    --input-padding: 10px;
 }
 
 /* Styles généraux */
