@@ -1,0 +1,81 @@
+
+/* Définition des variables CSS */
+:root {
+    --primary-color: #007bff;
+    --background-color: #f0f0f3;
+    --text-color: #333;
+    --white: #ffffff;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --font-family: 'Arial', sans-serif;
+    --header-font-size: 2.5rem; /*Variable pour la taille du titre*/
+    --subheader-font-size: 1.5rem;  /*Variable pour la taille du sous-titre */
+    --padding: 20px;
+    --margin: 20px;
+}
+
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: var(--padding);
+}
+
+header h1, .introduction h2 {
+    margin: 0;
+}
+
+header h1 {
+    font-size: var(--header-font-size);
+}
+
+nav {
+    margin: var(--margin) 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.introduction {
+    text-align: center;
+    margin: 40px 20px;
+    padding: 10px;  
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.introduction h2 {
+    font-size: var(--subheader-font-size);  
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: var(--margin);
+}
