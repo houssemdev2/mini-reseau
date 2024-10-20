@@ -68,4 +68,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll vers le bas
   };
+
+  // Envoi d'un nouveau message
+  sendButton.addEventListener("click", () => {
+    const messageContent = newMessage.value.trim();
+    if (messageContent && activeConversationId) {
+      const newMessageObj = {
+        timestamp: new Date().toISOString(),
+        sender: "Moi", // Remplacer par le nom de l'utilisateur actuel
+        content: messageContent,
+      };
+
+      // Ajouter le message dans la conversation active (localement)
+      const conversation = conversationsData.find(
+        (c) => c.id === activeConversationId
+      );
+      if (conversation) {
+        conversation.messages.push(newMessageObj); // Ajouter le message à la liste
+        renderMessages(conversation.messages); // Re-rendre les messages
+        newMessage.value = ""; // Effacer l'input après envoi
+      } else {
+        console.error("Erreur lors de l'ajout du message à la conversation.");
+      }
+    } else {
+      console.log(
+        "Le champ de message est vide ou aucune conversation active."
+      );
+    }
+  });
 });
