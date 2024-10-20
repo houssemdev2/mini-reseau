@@ -5,12 +5,23 @@
     --background-color: #f0f0f3;
     --text-color: #333;
     --white: #ffffff;
+    --red: #e21414;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --font-family: 'Arial', sans-serif;
     --header-font-size: 2.5rem; /*Variable pour la taille du titre*/
     --subheader-font-size: 1.5rem;  /*Variable pour la taille du sous-titre */
     --padding: 20px;
     --margin: 20px;
+    --primary-hover-color: darkblue;
+    --border-color: #ccc;
+    --contact-bg-hover: #e9ecef;
+    --input-padding: 10px;
+    --secondary-color: #f0f0f3;
+    --accent-color: #333;
+    --border-color: #ccc;
+    --hover-color: #e9ecef;
+    --button-hover-color: #0056b3;
+    --delete-hover-button-color: #ff4d4f;
 }
 
 /* Styles généraux */
