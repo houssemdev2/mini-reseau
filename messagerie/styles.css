@@ -1,4 +1,3 @@
-/* messagerie.css */
 
 .messaging-container {
     display: flex;
@@ -40,6 +39,10 @@
 #message-input {
     width: calc(100% - 110px);
     padding: var(--input-padding);
+}
+
+.chat-input-text{
+height: 2rem;
 }
 
 button {
