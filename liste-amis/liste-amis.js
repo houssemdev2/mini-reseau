@@ -39,4 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     renderAmisList(filteredAmis);
   });
+
+  // Fonction pour supprimer un ami
+  window.removeFriend = (id) => {
+    amisData = amisData.filter((ami) => ami.id !== id);
+    renderAmisList(amisData);
+    console.log(`Ami avec ID ${id} supprimé`);
+  };
 });
