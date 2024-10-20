@@ -56,4 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Conversation non trouvée.");
     }
   };
+
+  // Afficher les messages d'une conversation
+  const renderMessages = (messages) => {
+    messagesContainer.innerHTML = "";
+    messages.forEach(({ timestamp, sender, content }) => {
+      const messageElement = document.createElement("div");
+      const date = new Date(timestamp);
+      messageElement.innerHTML = `<strong>${sender}:</strong> ${content} <em>${date.toLocaleString()}</em>`;
+      messagesContainer.appendChild(messageElement);
+    });
+    messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll vers le bas
+  };
 });
