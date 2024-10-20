@@ -30,4 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
       amisList.appendChild(amiItem);
     });
   };
+
+  // Fonction de recherche
+  searchInput.addEventListener("input", (e) => {
+    const searchValue = e.target.value.toLowerCase();
+    const filteredAmis = amisData.filter((ami) =>
+      ami.name.toLowerCase().includes(searchValue)
+    );
+    renderAmisList(filteredAmis);
+  });
 });
