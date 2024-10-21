@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "user": "Alice",
+    "text": "Mon premier post !",
+    "image": "https://via.placeholder.com/150",
+    "reactions": {
+      "like": 10,
+      "dislike": 2,
+      "love": 5
+    },
+    "comments": [
+      {
+        "user": "Bob",
+        "text": "Génial !"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "user": "Charlie",
+    "text": "Voici une autre publication avec une photo.",
+    "image": "https://via.placeholder.com/150",
+    "reactions": {
+      "like": 3,
+      "dislike": 1,
+      "love": 2
+    },
+    "comments": []
+  }
+]
