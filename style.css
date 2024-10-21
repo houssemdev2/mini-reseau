@@ -9,8 +9,11 @@
     --font-family: 'Arial', sans-serif;
     --header-font-size: 2.5rem; /*Variable pour la taille du titre*/
     --subheader-font-size: 1.5rem;  /*Variable pour la taille du sous-titre */
-    --padding: 20px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --inner-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.8), inset -5px -5px 15px rgba(0, 0, 0, 0.2);
+    --header-font-size-lg: 40px; /* Taille de police fixe */
     --margin: 20px;
+    --padding: 20px;
 }
 
 /* Styles généraux */
