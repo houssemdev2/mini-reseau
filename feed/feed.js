@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Erreur lors du chargement du JSON:", error)
     );
 
-  // Function to display posts
+  // fonction affichage des posts
   function displayPosts(posts) {
     const postFeed = document.getElementById("post-feed");
     posts.forEach((post) => {
       const postElement = document.createElement("div");
       postElement.classList.add("post");
 
-      // Post content
+      // contenu de post
       postElement.innerHTML = `
           <h2>${post.user}</h2>
           <p>${post.text}</p>
@@ -40,6 +40,33 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
       postFeed.appendChild(postElement);
+
+      // Ajout event listeners pour les reactions
+      const likeBtn = postElement.querySelector(".like-btn");
+      const dislikeBtn = postElement.querySelector(".dislike-btn");
+      const loveBtn = postElement.querySelector(".love-btn");
+
+      likeBtn.addEventListener("click", () =>
+        updateReaction(post, "like", likeBtn)
+      );
+      dislikeBtn.addEventListener("click", () =>
+        updateReaction(post, "dislike", dislikeBtn)
+      );
+      loveBtn.addEventListener("click", () =>
+        updateReaction(post, "love", loveBtn)
+      );
     });
+  }
+
+  // Fonction pour mettre à jour les reactions
+  function updateReaction(post, reactionType, button) {
+    post.reactions[reactionType]++;
+    button.textContent = `${
+      reactionType === "like"
+        ? "👍 Like"
+        : reactionType === "dislike"
+        ? "👎 Dislike"
+        : "❤️ Love"
+    } (${post.reactions[reactionType]})`;
   }
 });
