@@ -1,0 +1,9 @@
+{
+  "amis": [
+    { "id": 1, "name": "Alice Dupont" },
+    { "id": 2, "name": "Bob Martin" },
+    { "id": 3, "name": "Caroline Leroy" },
+    { "id": 4, "name": "David Bernard" },
+    { "id": 5, "name": "Emma Moreau" }
+  ]
+}
