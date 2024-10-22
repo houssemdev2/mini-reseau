@@ -1,0 +1,148 @@
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: var( --padding-50);
+}
+
+.container {
+    width: 50%; /* Largeur relative en pourcentage */
+    margin: 0 auto; /* Centrage horizontal */
+    padding: var( --padding-50);
+}
+
+h1 {
+    font-size: var(--header-font-size-lg); /* Taille de police fixe */
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--margin);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre de texte douce */
+}
+
+/* Style des posts */
+.post {
+    background-color: var(--white);
+    padding: var( --padding-50);
+    margin-bottom: var(--margin);
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--inner-shadow); /* Ombres internes pour effet neumorphique */
+}
+
+.post-feed{
+    display: flex;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post .content {
+    font-size: 16px; /* Taille de police fixe */
+    color: var(--text-color);
+    margin-bottom: var( --padding-50);
+}
+
+/* Image du post */
+.post img {
+    height: 300px;
+    width: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: var( --padding-50);
+    cursor: pointer;
+    box-shadow: var(--inner-shadow); /* Ombres internes pour les images */
+}
+
+/* Boutons de réaction */
+.reactions {
+    display: flex;
+    justify-content: space-between; /* Distribution égale des boutons */
+    width: 100%; /* Utilisation de toute la largeur disponible */
+    padding-top: var( --padding-50);
+}
+
+.reactions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Taille de police fixe */
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.reactions button:hover {
+    color: darken(var(--primary-color), 10%);
+}
+
+/* Icones des réactions */
+.reactions button .icon {
+    margin-right: 8px;
+}
+
+/* Section des commentaires */
+.comments {
+    width: 100%; /* Largeur relative */
+    margin-top: var(--margin);
+}
+
+.comment {
+    background-color: #e0e0e0; /* Couleur de fond légèrement plus foncée */
+    padding: var( --padding-50);
+    border-radius: 10px; /* Coins arrondis */
+    margin-bottom: var( --padding-50);
+    box-shadow: var(--inner-shadow); /* Ombres internes pour effet neumorphique */
+}
+
+.comment .author {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.comment .text {
+    margin-top: 5px;
+    font-size: 14px; /* Taille de police fixe */
+    color: var(--text-color);
+}
+
+/* Formulaire de commentaire */
+.comment-form {
+    margin-top: var( --padding-50);
+    width: 100%; /* Largeur relative */
+}
+
+.comment-form textarea {
+    width: 100%; /* Largeur relative */
+    padding: var( --padding-50);
+    border-radius: 10px; /* Coins arrondis */
+    border: none; /* Suppression de la bordure par défaut */
+    box-shadow: var(--inner-shadow); /* Ombres internes pour effet neumorphique */
+    resize: none;
+    background-color: #ffffff; /* Couleur de fond du champ */
+}
+
+.comment-form button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px; /* Valeurs fixes pour le padding */
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+    margin-top: var(--margin);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comment-form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
