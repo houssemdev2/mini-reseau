@@ -1,10 +1,4 @@
-:root {
-    --primary-color: #007bff;
-    --background-color: #f0f0f3;
-    --text-color: #333;
-    --white: #ffffff;
- 
-}
+
 
 body {
     background-color: var(--background-color);
@@ -42,6 +36,12 @@ h1 {
     box-shadow: var(--inner-shadow); /* Ombres internes pour effet neumorphique */
 }
 
+.post-feed{
+    display: flex;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+}
+
 .post:hover {
     transform: translateY(-5px);
 }
@@ -54,9 +54,8 @@ h1 {
 
 /* Image du post */
 .post img {
-    width: 100%; /* Largeur relative en pourcentage */
-    height: auto; /* Ajustement automatique de la hauteur */
-    max-width: 500px; /* Taille maximale */
+    height: 300px;
+    width: 300px; 
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: var( --padding-50);

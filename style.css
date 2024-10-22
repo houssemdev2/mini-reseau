@@ -15,6 +15,7 @@
     --header-font-size-lg: 40px; /* Taille de police fixe */
     --margin: 20px;
     --padding: 20px;
+    --padding-50:50px;
     --primary-hover-color: darkblue;
     --border-color: #ccc;
     --input-padding: 10px;

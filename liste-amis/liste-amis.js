@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let amisData = []; // Initialisation des données
 
   // Charger les amis depuis le fichier data.json
-  fetch("data.json")
+  fetch("liste-amis.json")
     .then((response) => response.json())
     .then((data) => {
       amisData = data.amis; // Stocker les amis dans amisData

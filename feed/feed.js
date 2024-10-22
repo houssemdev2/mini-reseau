@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch JSON
-  fetch("data.json")
+  fetch("feed.json")
     .then((response) => response.json())
     .then((data) => {
       displayPosts(data);
